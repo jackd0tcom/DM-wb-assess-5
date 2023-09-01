@@ -1,0 +1,5 @@
+For part 2:
+primary keys are not serial
+
+foreign key for animals is called:
+humanId
