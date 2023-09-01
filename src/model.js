@@ -14,6 +14,12 @@ export class Human extends Model {
     const last = this.lname;
     return first + " " + last;
   }
+  // method that returns animals based on said guy
+
+  // async getAnimals() {
+  //   const animals = await Animal.getAll(this.humanId);
+  //   return animals;
+  // }
 }
 
 // const newGuy = Human.create({
