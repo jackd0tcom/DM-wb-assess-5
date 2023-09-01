@@ -52,11 +52,13 @@ export const query8 = await Human.findAll({
     email: { [Op.notLike]: "%gmail%" },
   },
 });
-console.log(query8);
 // Continue reading the instructions before you move on!
 
 // Print a directory of humans and their animals
-export async function printHumansAndAnimals() {}
+export async function printHumansAndAnimals() {
+  const humans = Human.findAll();
+  console.log(humans);
+}
 
 // Return a Set containing the full names of all humans
 // with animals of the given species.
