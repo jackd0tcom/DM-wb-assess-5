@@ -72,7 +72,7 @@ export async function printHumansAndAnimals() {
     });
 
     directory += `\n ${guysName} ${animals}`;
-    console.log(directory);
+    return directory;
   });
 }
 
@@ -92,4 +92,5 @@ export async function getHumansByAnimalSpecies(species) {
       peeps.add(fullName);
     });
   });
+  return peeps;
 }
